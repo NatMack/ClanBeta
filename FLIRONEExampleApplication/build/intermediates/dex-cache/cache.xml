@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.0.0_768f3dc7d90529c13828163693c557df21d244e5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.0.0_7a63417f803e4f67cb6ba50ea1cd27239aa9d6b3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/natalie/Downloads/adt-bundle-mac-x86_64/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.0.0_0f96f94320cfc5af50b2aaba25b51a0e504af6f5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="72029d4ea6d34d985b035c65cde0004d5ce0a172">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_867692027bc3a7536dd442b03a1763e4a3a87991/classes.dex" />
+    </item>
+    <item
+        jar="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ade773aaf4ae702c79031e5b1391b57207331929">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5e1a39db58c25b8d400d4b0bf8d46e8d34d3cd1e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/flironesdk/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="b2ada72741cd162af06a68e653d481e34f8f0fd3">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/intermediates-exploded-aar-flironesdk_95aacd6d894a512ebd64ed06a7722129b480f754/classes.dex" />
+    </item>
+    <item
+        jar="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-22.0.0_fa8774121cbe64eed0454f6fd427a33f0e5cc78e/classes.dex" />
+    </item>
+
+</items>
