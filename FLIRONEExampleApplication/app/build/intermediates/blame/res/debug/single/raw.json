@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/raw/default_camera_files.zip",
-        "source": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/flironesdk/res/raw/default_camera_files.zip"
+        "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/raw/sampleframes.zip",
+        "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/res/raw/sampleframes.zip"
     },
     {
-        "merged": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/raw/sampleframes.zip",
-        "source": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/src/main/res/raw/sampleframes.zip"
+        "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/raw/default_camera_files.zip",
+        "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/flironesdk/res/raw/default_camera_files.zip"
     }
 ]

@@ -4,28 +4,28 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="1461438282517112000" >
+    timestamp="1461444294515091000" >
 
     <task
         name="javac"
-        duration="361" />
+        duration="245" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="172" />
+        duration="134" />
     <task
         name="verifier"
-        duration="23" />
+        duration="28" />
 
     <artifact
-        location="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/outputs/apk/app-debug.apk"
+        location="/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1461438282517112000" >
+    <build timestamp="1461444294515091000" >
         <artifact
-            location="/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/outputs/apk/app-debug.apk"
+            location="/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

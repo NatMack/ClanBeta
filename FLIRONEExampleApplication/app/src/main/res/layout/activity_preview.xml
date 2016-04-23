@@ -29,16 +29,6 @@
             android:layout_gravity="top|center_horizontal" android:orientation="horizontal"
             tools:ignore="UselessParent"
             android:background="@color/black_overlay">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/battery_label"
-                android:id="@+id/batteryLabelTextView"
-                android:layout_margin="@dimen/abc_action_bar_default_padding_material"
-                android:layout_weight="0"
-                android:layout_gravity="left|center_vertical"
-                style="?actionMenuTextAppearance"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -50,15 +40,11 @@
                 android:tint="@color/accent_material_light"
                 android:visibility="gone" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/batteryLevelTextView"
-                android:layout_margin="@dimen/abc_action_bar_default_padding_material"
-                android:layout_weight="0.48"
-                android:layout_gravity="left|center_vertical"
-                android:text="--" />
+                android:text="[GEAR]"
+                android:id="@+id/button" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -69,33 +55,6 @@
                 android:checked="false"
                 android:visibility="invisible"
                 android:onClick="onSimulatedChargeCableToggleClicked" />
-
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/streamButton"
-                style="?metaButtonBarButtonStyle"
-                android:textOff="@string/startNetStream"
-                android:textOn="@string/stopNetStream"
-                android:onClick="onNetStreamClicked"/>
-
-            <Button
-                android:layout_width="51dp" style="?metaButtonBarButtonStyle"
-                android:layout_height="wrap_content"
-                android:text="@string/performTuning"
-                android:id="@+id/tuneButton"
-                android:onClick="onTuneClicked" />
-
-            <ToggleButton
-                android:layout_width="47dp"
-                android:layout_height="wrap_content"
-                android:text="@string/rotate_on"
-                android:id="@+id/switch_rotate"
-                android:onClick="onRotateClicked"
-                android:layout_gravity="right"
-                android:textOff="@string/rotate_off"
-                android:textOn="@string/rotate_on"
-                style="?metaButtonBarButtonStyle" />
 
 
         </LinearLayout>
@@ -150,22 +109,18 @@
                 android:layout_weight="0.33"
                 android:onClick="onCaptureImageClicked"
                 android:src="@android:drawable/ic_menu_camera"
-                android:layout_gravity="center_horizontal|bottom" />
+                android:layout_gravity="left|center_vertical" />
 
-            <ToggleButton android:id="@+id/change_view_button" style="?metaButtonBarButtonStyle"
-                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:layout_weight="0.33" android:textOff="@string/change_view"
-                android:textOn="@string/change_view_retract"
-                android:onClick="onChangeViewClicked"
-                android:layout_gravity="bottom|left" />
 
-            <Button
-                android:layout_width="wrap_content" style="?metaButtonBarButtonStyle"
+            <requestFocus android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/connectSim"
-                android:id="@+id/connect_sim_button"
-                android:onClick="onConnectSimClicked"
-                android:layout_gravity="center_horizontal|bottom|right" />
+                android:text="Circle Placeholder"
+                android:id="@+id/checkBox"
+                android:layout_gravity="center"
+                android:checked="false" />
 
 
         </FrameLayout>

@@ -107,7 +107,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                 public void run() {
                     chargeCableButton.setChecked(chargeCableIsConnected);
                     chargeCableButton.setVisibility(View.INVISIBLE);
-                    findViewById(R.id.connect_sim_button).setEnabled(false);
+                  //  findViewById(R.id.connect_sim_button).setEnabled(false);
                 }
             });
         }
@@ -122,20 +122,20 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         Log.i("ExampleApp", "Device disconnected!");
 
         final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
-        final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
+        //final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
         final ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 thermalImageView.setImageBitmap(Bitmap.createBitmap(1,1, Bitmap.Config.ALPHA_8));
-                levelTextView.setText("--");
+                //levelTextView.setText("--");
                 chargeCableButton.setChecked(chargeCableIsConnected);
                 chargeCableButton.setVisibility(View.INVISIBLE);
                 chargingIndicator.setVisibility(View.GONE);
                 thermalImageView.clearColorFilter();
                 findViewById(R.id.tuningProgressBar).setVisibility(View.GONE);
                 findViewById(R.id.tuningTextView).setVisibility(View.GONE);
-                findViewById(R.id.connect_sim_button).setEnabled(true);
+                //findViewById(R.id.connect_sim_button).setEnabled(true);
             }
         });
         flirOneDevice = null;
@@ -215,14 +215,14 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     public void onBatteryPercentageReceived(final byte percentage){
         Log.i("ExampleApp", "Battery percentage received!");
 
-        final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
+       /* final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 levelTextView.setText(String.valueOf((int) percentage) + "%");
             }
         });
-
+*/
 
     }
 
@@ -635,10 +635,10 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                             controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
                         }
 
-                        if (visible && !((ToggleButton)findViewById(R.id.change_view_button)).isChecked() && AUTO_HIDE) {
+                     /*   if (visible && !((ToggleButton)findViewById(R.id.change_view_button)).isChecked() && AUTO_HIDE) {
                             // Schedule a hide().
                             delayedHide(AUTO_HIDE_DELAY_MILLIS);
-                        }
+                        }*/
                     }
                 });
 
@@ -657,7 +657,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.change_view_button).setOnTouchListener(mDelayHideTouchListener);
+    //    findViewById(R.id.change_view_button).setOnTouchListener(mDelayHideTouchListener);
 
 
         orientationEventListener = new OrientationEventListener(this) {

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/values-w480dp-v13/values-w480dp-v13.xml",
+        "outputFile": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/values-w480dp-v13/values-w480dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-w480dp-v13/values.xml",
+                    "file": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-w480dp-v13/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/Users/natalie/github/FLIR/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-w480dp-v13/values.xml",
+                    "file": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-w480dp-v13/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
