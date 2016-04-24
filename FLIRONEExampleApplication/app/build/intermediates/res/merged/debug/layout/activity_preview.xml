@@ -22,42 +22,7 @@
     <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:id="@+id/fullscreen_content">
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls_top" style="@android:style/ButtonBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|center_horizontal" android:orientation="horizontal"
-            tools:ignore="UselessParent"
-            android:background="@color/black_overlay">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/batteryChargeIndicator"
-                android:layout_gravity="left|center_vertical"
-                android:layout_weight="0"
-                android:src="@android:drawable/ic_lock_idle_charging"
-                android:tint="@color/accent_material_light"
-                android:visibility="gone" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="[GEAR]"
-                android:id="@+id/button" />
-
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cable"
-                android:id="@+id/chargeCableToggle"
-                android:layout_weight="0.10"
-                android:checked="false"
-                android:visibility="invisible"
-                android:onClick="onSimulatedChargeCableToggleClicked" />
-
-
-        </LinearLayout>
         <FrameLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
@@ -108,7 +73,6 @@
                 android:id="@+id/imageButton"
                 android:layout_weight="0.33"
                 android:onClick="onCaptureImageClicked"
-                android:src="@android:drawable/ic_menu_camera"
                 android:layout_gravity="left|center_vertical" />
 
 
@@ -144,7 +108,12 @@
             android:layout_marginTop="36dp"
             android:visibility="gone" />
 
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photoTakenView"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="109px" />
 
 
     </FrameLayout>

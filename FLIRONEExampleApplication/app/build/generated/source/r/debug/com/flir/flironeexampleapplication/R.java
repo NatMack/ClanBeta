@@ -1317,6 +1317,8 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020034;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020035;
         public static final int abc_textfield_search_material=0x7f020036;
+        public static final int delete_cross=0x7f020037;
+        public static final int ic_action_name=0x7f020038;
     }
     public static final class id {
         public static final int action_bar=0x7f0e0031;
@@ -1334,11 +1336,8 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0e0020;
         public static final int activity_chooser_view_content=0x7f0e0021;
         public static final int always=0x7f0e0016;
-        public static final int batteryChargeIndicator=0x7f0e0044;
         public static final int beginning=0x7f0e0013;
-        public static final int button=0x7f0e0045;
-        public static final int chargeCableToggle=0x7f0e0046;
-        public static final int checkBox=0x7f0e004c;
+        public static final int checkBox=0x7f0e0048;
         public static final int checkbox=0x7f0e0029;
         public static final int collapseActionView=0x7f0e0017;
         public static final int decor_content_parent=0x7f0e002f;
@@ -1352,16 +1351,15 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0e0022;
         public static final int expanded_menu=0x7f0e0028;
         public static final int fullscreen_content=0x7f0e0042;
-        public static final int fullscreen_content_controls=0x7f0e0047;
-        public static final int fullscreen_content_controls_top=0x7f0e0043;
+        public static final int fullscreen_content_controls=0x7f0e0043;
         public static final int home=0x7f0e0004;
         public static final int homeAsUp=0x7f0e000d;
         public static final int icon=0x7f0e0026;
         public static final int ifRoom=0x7f0e0018;
         public static final int image=0x7f0e0023;
-        public static final int imageButton=0x7f0e004b;
-        public static final int imageTypeListContainer=0x7f0e0048;
-        public static final int imageTypeListView=0x7f0e0049;
+        public static final int imageButton=0x7f0e0047;
+        public static final int imageTypeListContainer=0x7f0e0044;
+        public static final int imageTypeListView=0x7f0e0045;
         public static final int imageView=0x7f0e0041;
         public static final int listMode=0x7f0e0009;
         public static final int list_item=0x7f0e0025;
@@ -1369,7 +1367,8 @@ containing a value of this type.
         public static final int never=0x7f0e0019;
         public static final int none=0x7f0e000e;
         public static final int normal=0x7f0e000a;
-        public static final int paletteListView=0x7f0e004a;
+        public static final int paletteListView=0x7f0e0046;
+        public static final int photoTakenView=0x7f0e004b;
         public static final int progress_circular=0x7f0e0005;
         public static final int progress_horizontal=0x7f0e0006;
         public static final int radio=0x7f0e002b;
@@ -1392,8 +1391,8 @@ containing a value of this type.
         public static final int tabMode=0x7f0e000b;
         public static final int title=0x7f0e0027;
         public static final int topView=0x7f0e0040;
-        public static final int tuningProgressBar=0x7f0e004d;
-        public static final int tuningTextView=0x7f0e004e;
+        public static final int tuningProgressBar=0x7f0e0049;
+        public static final int tuningTextView=0x7f0e004a;
         public static final int up=0x7f0e0008;
         public static final int useLogo=0x7f0e0012;
         public static final int withText=0x7f0e001a;
@@ -1433,7 +1432,10 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040019;
     }
     public static final class mipmap {
-        public static final int ic_launcher=0x7f030000;
+        public static final int colored_sun=0x7f030000;
+        public static final int ic_launcher=0x7f030001;
+        public static final int solid_red_sun=0x7f030002;
+        public static final int yellow_red_sun=0x7f030003;
     }
     public static final class raw {
         public static final int default_camera_files=0x7f070000;

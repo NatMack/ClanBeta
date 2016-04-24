@@ -24,7 +24,7 @@ MERGED from [com.android.support:support-v4:22.0.0] /Users/natalie/github/ClanBe
 	android:allowBackup
 		ADDED from /Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/AndroidManifest.xml:7:9-46
 	android:theme
 		ADDED from /Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/AndroidManifest.xml:9:9-40
 	android:versionName

@@ -19,7 +19,7 @@
         jar="/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="bfda8248947caba8c2d9eca3173d4f2fd4d871dd">
+        sha1="8915bf6524456281a602bfdbd2d9b6d22e36b5a5">
         <dex dex="/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a6e1e2c8f43b4ff13cffe333b6002a4be7ca23b5/classes.dex" />
     </item>
     <item
@@ -47,7 +47,7 @@
         jar="/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="74715ad7dba94dbde8ead8d1407f4485cfbdc252">
+        sha1="a685c0912614bfbcd22851b3ccd624954ab0e611">
         <dex dex="/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_796ee615bb632984c2a757dc63c849e19587086a/classes.dex" />
     </item>
 

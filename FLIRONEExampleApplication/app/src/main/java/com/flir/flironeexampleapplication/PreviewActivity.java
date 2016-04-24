@@ -1,24 +1,22 @@
 package com.flir.flironeexampleapplication;
 
-import com.flir.flironeexampleapplication.util.SystemUiHider;
-
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.BitmapFactory;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
-import android.os.Environment;
-import android.util.Log;
-import android.content.Context;
-import android.app.Activity;
-import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.OrientationEventListener;
 import android.view.ScaleGestureDetector;
@@ -26,16 +24,17 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.flir.flironeexampleapplication.util.SystemUiHider;
 import com.flir.flironesdk.Device;
 import com.flir.flironesdk.Frame;
 import com.flir.flironesdk.FrameProcessor;
-import com.flir.flironesdk.RenderedImage;
 import com.flir.flironesdk.LoadedFrame;
+import com.flir.flironesdk.RenderedImage;
 import com.flir.flironesdk.SimulatedDevice;
 
 import java.io.ByteArrayOutputStream;
@@ -44,7 +43,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.EnumSet;
@@ -68,6 +66,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     private boolean chargeCableIsConnected = true;
 
     private int deviceRotation= 0;
+    private boolean camModeOn = true;
     private OrientationEventListener orientationEventListener;
 
 
@@ -92,12 +91,12 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         flirOneDevice.setPowerUpdateDelegate(this);
         flirOneDevice.startFrameStream(this);
 
-        final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
-        if(flirOneDevice instanceof SimulatedDevice){
+       // final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
+      /*  if(flirOneDevice instanceof SimulatedDevice){
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    chargeCableButton.setChecked(chargeCableIsConnected);
+          /          chargeCableButton.setChecked(chargeCableIsConnected);
                     chargeCableButton.setVisibility(View.VISIBLE);
                 }
             });
@@ -111,7 +110,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                 }
             });
         }
-
+*/
         orientationEventListener.enable();
     }
 
@@ -121,17 +120,17 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     public void onDeviceDisconnected(Device device){
         Log.i("ExampleApp", "Device disconnected!");
 
-        final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
+        //final ToggleButton chargeCableButton = (ToggleButton)findViewById(R.id.chargeCableToggle);
         //final TextView levelTextView = (TextView)findViewById(R.id.batteryLevelTextView);
-        final ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
+       // final ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 thermalImageView.setImageBitmap(Bitmap.createBitmap(1,1, Bitmap.Config.ALPHA_8));
                 //levelTextView.setText("--");
-                chargeCableButton.setChecked(chargeCableIsConnected);
-                chargeCableButton.setVisibility(View.INVISIBLE);
-                chargingIndicator.setVisibility(View.GONE);
+//                chargeCableButton.setChecked(chargeCableIsConnected);
+//                chargeCableButton.setVisibility(View.INVISIBLE);
+//                chargingIndicator.setVisibility(View.GONE);
                 thermalImageView.clearColorFilter();
                 findViewById(R.id.tuningProgressBar).setVisibility(View.GONE);
                 findViewById(R.id.tuningTextView).setVisibility(View.GONE);
@@ -186,7 +185,7 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
+         /*       ImageView chargingIndicator = (ImageView)findViewById(R.id.batteryChargeIndicator);
                 if (originalChargingIndicatorColor == null){
                     originalChargingIndicatorColor = chargingIndicator.getColorFilter();
                 }
@@ -207,8 +206,9 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                     default:
                         chargingIndicator.setVisibility(View.GONE);
                         break;
-                }
+                } */
             }
+
         });
     }
     @Override
@@ -266,7 +266,22 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                     String fileName = "FLIROne-" + formatedDate + ".jpg";
                     try{
                         lastSavedPath = path+ "/" + fileName;
-                        renderedImage.getFrame().save(new File(lastSavedPath), RenderedImage.Palette.Iron, RenderedImage.ImageType.BlendedMSXRGBA8888Image);
+                        File myFile = new File(lastSavedPath);
+                        renderedImage.getFrame().save(myFile, RenderedImage.Palette.Iron, RenderedImage.ImageType.BlendedMSXRGBA8888Image);
+
+                        /**INPUT CODE TO MESS WITH PHOTO HERE**/
+
+                        //gets edited photo and displays it.
+
+//                        LoadedFrame loadedFrame = new LoadedFrame(myFile);
+//                        RenderedImage.ImageType imageType = loadedFrame.getPreviewImageType();
+//
+                        ImageView imageView = (ImageView)findViewById(R.id.photoTakenView);
+                        imageView.setImageBitmap(thermalBitmap);
+                       // ImageView imageView1 = (ImageView)findViewById(R.id.imageButton);
+                        //imageView1.setImageResource(android.R.drawable.ic_menu_close_clear_cancel);
+
+                        //LoadedFrame gives frame, then .processFrame to display
 
                         MediaScannerConnection.scanFile(context,
                                 new String[]{path + "/" + fileName}, null,
@@ -379,21 +394,43 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     }
     public void onCaptureImageClicked(View v){
 
+        //TODO: compare the image resource and carry on accordingly...
+        ImageButton imageButton = (ImageButton)findViewById(R.id.imageButton);
 
-        // if nothing's connected, let's load an image instead?
+        //camera icon visible
+       if (camModeOn) {
+           camModeOn = false;
+           System.out.println("I AM A CAMERA");
 
-        if(flirOneDevice == null && lastSavedPath != null) {
-            // load!
-            File file = new File(lastSavedPath);
+
+           imageButton.setImageResource(android.R.drawable.ic_menu_close_clear_cancel);
 
 
-            LoadedFrame frame = new LoadedFrame(file);
+           // if nothing's connected, let's load an image instead?
 
-            // load the frame
-            onFrameReceived(frame);
-        } else {
-            this.imageCaptureRequested = true;
-        }
+           if (flirOneDevice == null && lastSavedPath != null) {
+               // load!
+               File file = new File(lastSavedPath);
+
+
+               LoadedFrame frame = new LoadedFrame(file);
+
+               // load the frame
+               onFrameReceived(frame);
+           } else {
+               this.imageCaptureRequested = true;
+           }
+       } else { //x-out mode
+           camModeOn = true;
+           imageButton.setImageResource(android.R.drawable.ic_menu_camera);
+
+           ImageView imageView = (ImageView)findViewById(R.id.photoTakenView);
+           if (imageView.getDrawable() != null) {
+               BitmapDrawable bd = (BitmapDrawable) imageView.getDrawable();
+               bd.setAlpha(0);
+               imageView.setImageDrawable(bd);
+           }
+       }
     }
     public void onConnectSimClicked(View v){
         if(flirOneDevice == null){
@@ -543,11 +580,10 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_preview);
 
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
-        final View controlsViewTop = findViewById(R.id.fullscreen_content_controls_top);
+       // final View controlsViewTop = findViewById(R.id.fullscreen_content_controls_top);
         final View contentView = findViewById(R.id.fullscreen_content);
 
 
@@ -626,13 +662,13 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                             controlsView.animate()
                                     .translationY(visible ? 0 : mControlsHeight)
                                     .setDuration(mShortAnimTime);
-                            controlsViewTop.animate().translationY(visible ? 0 : -1 * mControlsHeight).setDuration(mShortAnimTime);
+                      //      controlsViewTop.animate().translationY(visible ? 0 : -1 * mControlsHeight).setDuration(mShortAnimTime);
                         } else {
                             // If the ViewPropertyAnimator APIs aren't
                             // available, simply show or hide the in-layout UI
                             // controls.
                             controlsView.setVisibility(visible ? View.VISIBLE : View.GONE);
-                            controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
+                      //      controlsViewTop.setVisibility(visible ? View.VISIBLE : View.GONE);
                         }
 
                      /*   if (visible && !((ToggleButton)findViewById(R.id.change_view_button)).isChecked() && AUTO_HIDE) {
@@ -689,6 +725,10 @@ public class PreviewActivity extends Activity implements Device.Delegate, FrameP
                 return true;
             }
         });
+
+        ImageButton imageButton = (ImageButton)findViewById(R.id.imageButton);
+        imageButton.setImageResource(android.R.drawable.ic_menu_camera);
+        //android:src="@android:drawable/ic_menu_camera"
 
     }
 

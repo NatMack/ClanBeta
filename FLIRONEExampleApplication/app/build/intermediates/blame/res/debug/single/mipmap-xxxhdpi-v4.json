@@ -1,5 +1,17 @@
 [
     {
+        "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/colored_sun.png",
+        "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/res/mipmap-xxxhdpi/colored_sun.png"
+    },
+    {
+        "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/solid_red_sun.png",
+        "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/res/mipmap-xxxhdpi/solid_red_sun.png"
+    },
+    {
+        "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/yellow_red_sun.png",
+        "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/res/mipmap-xxxhdpi/yellow_red_sun.png"
+    },
+    {
         "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
         "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }

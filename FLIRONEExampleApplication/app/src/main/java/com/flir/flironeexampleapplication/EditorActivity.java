@@ -41,7 +41,6 @@ public class EditorActivity extends Activity {
             @Override
             public void onFrameProcessed(RenderedImage renderedImage) {
                 Log.d(LOG_TAG, "onFrameProcessed");
-
                 if (renderedImage.imageType() == RenderedImage.ImageType.BlendedMSXRGBA8888Image) {
                     msxRenderedImage = renderedImage;
                     thermalBitmap = Bitmap.createBitmap(renderedImage.width(), renderedImage.height(), Bitmap.Config.ARGB_8888);

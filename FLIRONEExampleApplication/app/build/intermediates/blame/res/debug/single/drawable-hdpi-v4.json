@@ -84,6 +84,10 @@
         "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_action_name.png",
+        "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/src/main/res/drawable-hdpi/ic_action_name.png"
+    },
+    {
         "merged": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
         "source": "/Users/natalie/github/ClanBeta/FLIRONEExampleApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
